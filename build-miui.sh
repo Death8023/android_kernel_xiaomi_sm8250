@@ -126,8 +126,8 @@ echo "Cleaning..."
 rm -rf out/
 rm -rf anykernel/
 
-echo "Clone AnyKernel3 for packing kernel (repo: https://github.com/AstideLabs/AnyKernel3)"
-git clone https://github.com/AstideLabs/AnyKernel3 -b master --single-branch --depth=1 anykernel
+echo "Clone AnyKernel3 for packing kernel (repo: https://github.com/Death8023/AnyKernel3_alioth_build)"
+git clone https://github.com/Death8023/AnyKernel3_alioth_build -b master --single-branch --depth=1 anykernel
 
 # ------------- Building for MIUI -------------
 
