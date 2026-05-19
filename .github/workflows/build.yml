@@ -96,8 +96,8 @@ jobs:
 
         grep "CONFIG_LSM" out/.config
 
-    - name: Upload Alioth_perf
-      uses: actions/upload-Alioth_perf@Death
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v6
       with:
         name: Kernel-${{ inputs.device }}-${{ inputs.script }}-${{ inputs.ksu && 'KSU' || 'NoKSU' }}-${{ github.run_number }}
         path: ./*.zip
