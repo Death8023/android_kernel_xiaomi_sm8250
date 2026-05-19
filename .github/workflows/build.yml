@@ -92,8 +92,6 @@ jobs:
           bash ${{ inputs.script }} ${{ inputs.device }}
         fi
 
-        make LOCALVERSION= 
-
     - name: Upload Artifact
       uses: actions/upload-artifact@v6
       with:
