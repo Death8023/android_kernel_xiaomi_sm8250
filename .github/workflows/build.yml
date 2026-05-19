@@ -92,8 +92,12 @@ jobs:
           bash ${{ inputs.script }} ${{ inputs.device }}
         fi
 
-    - name: Upload Artifacts
-      uses: actions/upload-artifact@v6
+        make LOCALVERSION= 
+
+        grep "CONFIG_LSM" out/.config
+
+    - name: Upload Alioth_perf
+      uses: actions/upload-Alioth_perf@Death
       with:
         name: Kernel-${{ inputs.device }}-${{ inputs.script }}-${{ inputs.ksu && 'KSU' || 'NoKSU' }}-${{ github.run_number }}
         path: ./*.zip
