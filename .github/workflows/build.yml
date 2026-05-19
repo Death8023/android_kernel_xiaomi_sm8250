@@ -94,8 +94,6 @@ jobs:
 
         make LOCALVERSION= 
 
-        grep "CONFIG_LSM" out/.config
-
     - name: Upload Artifact
       uses: actions/upload-artifact@v6
       with:
